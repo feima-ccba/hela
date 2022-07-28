@@ -60,5 +60,16 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3",
     "husky": "^8.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint:js",
+      "git add"
+    ]
   }
 }

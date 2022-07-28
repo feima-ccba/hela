@@ -8,6 +8,7 @@ import { useCallback } from "react";
 const Index = () => {
   return (
     <div className="index">
+      q
       <img src={pic} alt="" />
     </div>
   );

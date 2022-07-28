@@ -61,11 +61,6 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*{.ts,.tsx,.js, jsx}": [
       "eslint --ext .tsx,.ts --fix ./src",

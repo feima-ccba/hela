@@ -6,7 +6,9 @@
     "start": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js",
     "lint:js": "eslint . --ext .ts,.tsx --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint src",
+    "lint-staged": "lint-staged"
   },
   "author": "cxw",
   "license": "ISC",

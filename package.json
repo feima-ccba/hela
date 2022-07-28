@@ -5,6 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'"
   },
   "author": "cxw",
@@ -59,15 +60,5 @@
     "eslint-plugin-react": "^7.30.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/*.{js,jsx,mjs,ts,tsx}": [
-      "prettier --write"
-    ]
   }
 }

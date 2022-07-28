@@ -3,7 +3,7 @@ import "./index.css";
 
 import pic from "@/assets/images/doctor-logo.png";
 
-import { ppps3 } from "react";
+import { ppps31111111111111 } from "react";
 
 const Index = () => {
   return (

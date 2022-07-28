@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRoutes } from "react-router-dom";
 import { Suspense } from "react";
 import routes from "./routes";

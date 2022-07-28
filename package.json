@@ -5,7 +5,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js",
-    "lint:js": "eslint . --ext .ts,.tsx --fix"
+    "lint:js": "eslint . --ext .ts,.tsx --fix",
+    "prepare": "husky install"
   },
   "author": "cxw",
   "license": "ISC",
@@ -60,11 +61,5 @@
     "husky": "^8.0.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
-  },
-  "lint-staged": {
-    "*{.ts,.tsx,.js, jsx}": [
-      "eslint --ext .tsx,.ts --fix ./src",
-      "prettier --write"
-    ]
   }
 }

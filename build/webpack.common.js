@@ -2,14 +2,13 @@
  * @Author: cxw
  * @Date: 2022-07-27 16:11:34
  * @LastEditors: cxw
- * @LastEditTime: 2022-07-28 11:54:33
+ * @LastEditTime: 2022-07-28 14:47:35
  * @Description:
  *
  */
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const autoprefixer = require("autoprefixer");
 
 const devMode = process.env.NODE_ENV !== "production";
 

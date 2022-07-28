@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js",
-    "prepare": "husky install"
+    "lint:js": "eslint . --ext .ts,.tsx --fix"
   },
   "author": "cxw",
   "license": "ISC",

@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import { Suspense } from "react";
-import routes from "./routes";
+import type { RouteObject } from "react-router-dom";
+import routes, { RouteItem } from "./routes";
 
 //根据路径获取路由
 // const checkAuth = (routers:any, path:String)=>{
@@ -14,10 +15,11 @@ import routes from "./routes";
 //   return null
 // }
 
-const generateRouter = (routers: any) => {
+const generateRouter: (routers: RouteItem[]) => RouteObject[] = (routers) => {
   return routers.map((item: any) => {
     if (item.children) {
-      item.children = generateRouter(item.children);
+      const children = generateRouter(item.children);
+      item.children = children;
     }
     item.element = (
       <Suspense fallback={<div>加载中...</div>}>

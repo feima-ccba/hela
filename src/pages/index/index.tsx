@@ -3,7 +3,7 @@ import "./index.css";
 
 import pic from "@/assets/images/doctor-logo.png";
 
-import { useCallback1 } from "react";
+import { useCallback12 } from "react";
 
 const Index = () => {
   return (

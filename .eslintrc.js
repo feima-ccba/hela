@@ -24,5 +24,6 @@ module.exports = {
     "no-debugger": process.env.NODE_ENV === "production" ? "warning" : "off",
     quotes: [2, "double"],
     "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-explicit-any": "off",
   },
 };

@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import type { LazyExoticComponent } from "react";
-import { RouteObject } from "react-router-dom";
 export interface RouteItem {
   children?: RouteItem[];
   element?: React.ReactNode;

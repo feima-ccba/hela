@@ -4,7 +4,8 @@
   "description": "h5模板",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js"
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'"
   },
   "author": "cxw",
   "license": "ISC",
@@ -66,13 +67,7 @@
   },
   "lint-staged": {
     "src/*.{js,jsx,mjs,ts,tsx}": [
-      "node_modules/.bin/prettier --write",
-      "node_modules/.bin/eslint --fix",
-      "git add"
-    ],
-    "src/*.{css,scss,less,json,html,md,markdown}": [
-      "node_modules/.bin/prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
